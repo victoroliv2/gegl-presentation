@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<gegl>
+  <node operation='gegl:over'>
+    <node operation='gegl:translate'>
+      <params>
+        <param name='x'>160.0</param>
+        <param name='y'>90.0</param>
+      </params>
+    </node>
+    <node operation='gegl:scale'>
+      <params>
+        <param name='x'>2.0</param>
+        <param name='y'>2.0</param>
+      </params>
+    </node>
+    <node operation='gegl:opacity'>
+      <params>
+        <param name='value'>0.7</param>
+      </params>
+    </node>  
+    <node operation='gegl:invert'>
+    </node>
+    <node operation='gegl:load'>
+      <params>
+        <param name='path'>gegl.png</param>
+      </params>
+    </node>
+  </node>
+  <node operation='gegl:load'>
+    <params>
+      <param name='path'>image.png</param>
+    </params>
+  </node>
+</gegl>
